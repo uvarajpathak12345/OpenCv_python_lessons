@@ -4,6 +4,8 @@ import numpy as np
 
 window = np.zeros((500,500, 3) , dtype="uint8")
 # cv.imshow("blank" , window)
+#3 means it takes the 3 color which is BRG
+
 
 # window[200:300 , 300:400] = 0,255,0
 # cv.imshow("green" , window)

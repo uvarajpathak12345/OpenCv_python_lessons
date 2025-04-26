@@ -16,15 +16,18 @@ grey = cv.cvtColor(img , cv.COLOR_BGR2GRAY)
 #blur
 blur = cv.GaussianBlur(img , (3,3), cv.BORDER_DEFAULT)
 
-#EDGE canny
+#EDGE canny (anny lee edge heru detect garna ko lagi use  hunxa) default value vaneko jailey ni  125 rw 175 hunxa aaba depends upon on programme
 edge = cv.Canny(blur , 125 , 175)
 
 #cropped
-
 cropped = img[100:300 , 300: 400 ]
 
 
-cv.imshow("img" , cropped)
+
+
+
+
+cv.imshow("img" , grey)
 
 
 cv.waitKey(0)

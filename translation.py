@@ -28,6 +28,13 @@ def rotate(img , angle ,roatePoint = None):
 resize = cv.resize(img , (400 , 400) , interpolation=cv.INTER_AREA)
 cv.imshow("resize" , resize)
 
+#flip
+#0 means flip the image vertically
+#1 means flip the image horizontally
+#-1 means both vertically and horizontally 
+flip = cv.flip(img , 0 )
+cv.imshow("flipped" , flip)
+
 
 translation = trans(img , 100 ,200)
 cv.imshow("translate" , translation)
