@@ -15,7 +15,7 @@ while True:
     cv.imshow("video" , frame)
     cv.imshow("Re Video" , reframe)
  
-    if cv.waitKey(20) & 0xFF == ord('d'):
+    if cv.waitKey(20) & 0xFF == ord('d'): 
         break
 capture.release()
 cv.destroyAllWindows()

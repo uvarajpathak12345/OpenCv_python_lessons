@@ -24,7 +24,7 @@ cv.imshow("gaussian Blur" , guss)
 medain = cv.medianBlur(img , 3)
 cv.imshow("Median Blur" , medain)
 
-#biletral blur 
+#biletral blur (it is also mostly used to reduce the noise from the image)
 bilteral = cv.bilateralFilter(img , 3 , 15 ,15)
 cv.imshow("bileteral Blur" , bilteral)
 
