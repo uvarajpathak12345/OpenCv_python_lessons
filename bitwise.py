@@ -17,5 +17,17 @@ cv.imshow("bitwise_and" , bitwise_and)
 bitwise_or = cv.bitwise_or(rectangle,circle)
 cv.imshow("bitwise_or",bitwise_or)
 
+#bitwise XOR operator ---> (give the Non-intersecting part)
+bitwise_xor = cv.bitwise_xor(rectangle , circle)
+cv.imshow("bitwise_xor" , bitwise_xor)
+
+
+#bitwise operator ---> (it give the invert image of the actual image )
+rbitwise_not= cv.bitwise_not(rectangle)
+cv.imshow("rectangle_not" , rbitwise_not)
+
+cbitwise_not = cv.bitwise_not(circle)
+cv.imshow("ciricle_not" , cbitwise_not)
+
 
 cv.waitKey(0)
