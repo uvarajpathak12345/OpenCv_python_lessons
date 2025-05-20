@@ -18,7 +18,7 @@ blank = np.zeros(img.shape , dtype="uint8")
 
 
 
-ret , thresh = cv.threshold(grey , 125 ,255 , cv.THRESH_BINARY)
+threshold , thresh = cv.threshold(grey , 125 ,255 , cv.THRESH_BINARY)
 #255 is the max value of threshold function
 cv.imshow("thresh" , thresh)
 '''

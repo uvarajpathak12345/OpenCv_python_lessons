@@ -32,4 +32,10 @@ cv.imshow("masking ", biwise_and)
 intersect_mask = cv.bitwise_and(img , img , mask=circle_rectnagle)
 cv.imshow("intersect_mask" , intersect_mask)
 
+
+'''
+for example i want to mask the img in rectangle then in bitwise oprator i should use the img, img two source image same 
+as given above and mask = (add the those item ,img is going to be masked)
+ 
+'''
 cv.waitKey(0)

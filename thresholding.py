@@ -16,10 +16,10 @@ threshold , thres_inv = cv.threshold(grey , 150 , 255 , cv.THRESH_BINARY_INV)
 cv.imshow("Threshold inv",thres_inv)
 
 #adaptive threshold
-absolute = cv.adaptiveThreshold(grey , 255 ,cv.ADAPTIVE_THRESH_GAUSSIAN_C , cv.THRESH_BINARY , 15 , 10)
+absolute = cv.adaptiveThreshold(grey , 255 ,cv.ADAPTIVE_THRESH_MEAN_C , cv.THRESH_BINARY , 15 , 10)
 cv.imshow("Adaptive thres" , absolute)
 
-#in adaptive threshold if the mean value (i.e mean value of 10 pixel of image ) is greater then 15 then it becomes 255, if not
+#(CV.ADAPTIVE_THRESH_MEAN_C)in adaptive threshold if the mean value (i.e mean value of 10 pixel of image ) is greater then 15 then it becomes 255, if not
 #then it becomes 0
 
 #(cv.AADAPTIVE_THRESH_GAUSSIAN_C)in gaussian blur methode it make the window of 10 and calculate the its pixel, therefore if the value is greater then 15 it becomes 25, if
